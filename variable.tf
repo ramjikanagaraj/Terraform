@@ -102,6 +102,6 @@ variable "Pri_rou_name" {
 
 variable "security_groups_name" {
   type        = string
-  description = "Give the security group"
+  description = "Give the security group name"
   // default = "Demo_VPC_SGs"
 }
