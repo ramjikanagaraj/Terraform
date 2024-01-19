@@ -98,7 +98,7 @@ variable "Pri_rou_name" {
   default = "pri_route"
 }
 
-// security group
+// security group SG
 
 variable "security_groups_name" {
   type        = string
