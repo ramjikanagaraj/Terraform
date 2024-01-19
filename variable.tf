@@ -2,7 +2,7 @@
 
 variable "region" {
   type = string
-  description = "give region name"
+  description = "give region a name"
 }
 
 // ami
