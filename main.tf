@@ -1,4 +1,4 @@
-// Instance
+// Instance EC2
 
 resource "aws_instance" "public" {
   ami = var.ami
