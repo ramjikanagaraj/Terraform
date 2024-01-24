@@ -6,7 +6,7 @@ variable "instance_type" {
     type = string
     description = "Added t2micro"
 }
-variable "Instance_name" {
+variable "instance_name" {
     type =  string
     description = "Named EC2" 
 }
