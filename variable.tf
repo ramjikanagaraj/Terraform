@@ -1,8 +1,6 @@
 //region
 
 variable "region" {
-  type = string
-  description = "give region a name"
 }
 
 // ami
