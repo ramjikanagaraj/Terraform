@@ -78,6 +78,4 @@ variable "Pri_rou_name" {
 // security group
 
 variable "security_groups_name" {
-  type        = string
-  description = "Give the security group"
 }
