@@ -20,9 +20,9 @@ variable "filename" {
   description = "Give the file name"
 }
 
-variable "content" {
-  description = "File content"
-}
+# variable "content" {
+#   description = "File content"
+# }
 
 variable "prefix" {
   type        = string
