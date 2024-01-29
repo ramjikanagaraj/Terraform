@@ -10,3 +10,7 @@ variable "instance_name" {
     type =  string
     description = "Named EC2" 
 }
+variable "CIDR" {
+  type = string
+  description = "CIDR value"
+}
