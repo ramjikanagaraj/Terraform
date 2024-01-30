@@ -1,7 +1,7 @@
 resource "local_file" "pets" {
   filename = var.filename
   # content  = var.content 
-  content = "my pets name is ${random_pet.random.id}"
+  content = "${random_pet.random.id} that my pet name"
 
   # Explicit dependency
   depends_on = [

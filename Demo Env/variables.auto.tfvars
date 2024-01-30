@@ -6,4 +6,4 @@ filename      = "local-file"
 # content       = "my pets name is ${random_pet.random.id}"
 prefix        = "Mr"
 separator     = "."
-length        = 2
+length        = 1
