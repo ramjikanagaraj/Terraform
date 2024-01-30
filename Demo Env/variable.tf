@@ -21,6 +21,7 @@ variable "filename" {
 }
 
 # variable "content" {
+#   type = string
 #   description = "File content"
 # }
 
