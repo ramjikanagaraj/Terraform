@@ -1,0 +1,9 @@
+ami           = "ami-03f4878755434977f"
+instance_type = "t2.micro"
+instance_name = "public"
+CIDR          = "10.0.0.0/16"
+filename      = "local-file"
+# content       = "my pets name is ${random_pet.random.id}"
+prefix        = "Mr"
+separator     = "."
+length        = 1
