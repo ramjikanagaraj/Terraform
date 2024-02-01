@@ -1,22 +1,31 @@
 resource "local_file" "pets" {
   filename = var.filename
   # content  = var.content 
-  content = "${random_pet.random.id} that my pet name"
+  content         = "${random_pet.random.id} that my pet name"
   file_permission = 0777
 
-  # It will create the new file before deleting the new file
   lifecycle {
+    # It will create the new file before deleting the new file
     create_before_destroy = true
-  }
-  # It will prevent the resource file from the delection 
-    lifecycle {
+    # It will prevent the resource file from the delection
     prevent_destroy = false
+    # It will ignore the mentioned resource changes
+    ignore_changes = [ file_permission ]
   }
 
   # Explicit dependency
   depends_on = [
     random_pet.random
   ]
+}
+
+resource "local_file" "pet2" {
+  filename = "pet2.txt"
+  content = data.local_file.test.content
+}
+
+data "local_file" "test" {
+  filename = "test.txt"
 }
 
 resource "random_pet" "random" {

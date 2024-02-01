@@ -1,2 +1,3 @@
 .terraform/
 local-file
+*.txt
