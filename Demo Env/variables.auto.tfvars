@@ -7,3 +7,4 @@ filename      = "local-file"
 prefix    = "Mr"
 separator = "."
 length    = 2
+arrg = [ "pet1","pet2","pet3" ]

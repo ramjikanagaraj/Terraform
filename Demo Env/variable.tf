@@ -39,3 +39,7 @@ variable "length" {
   type        = number
   description = "file length"
 }
+
+variable "arrg" {
+  type = list(string)
+}
