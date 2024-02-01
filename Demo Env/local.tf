@@ -19,11 +19,13 @@ resource "local_file" "pets" {
   ]
 }
 
+# By using the data resource created a new file
 resource "local_file" "pet2" {
   filename = "pet2.txt"
   content = data.local_file.test.content
 }
 
+# Data resource file created manual
 data "local_file" "test" {
   filename = "test.txt"
 }
