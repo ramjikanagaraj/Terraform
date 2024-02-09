@@ -1,15 +1,16 @@
 //region
-
 variable "region" {
+  type        = string
+  description = "region name"
 }
 
 // ami
-
 variable "ami" {
+  type        = string
+  description = "Ubuntu"
 }
 
 // Instance Type
-
 variable "instance_type" {
 }
 // public Instance Name
